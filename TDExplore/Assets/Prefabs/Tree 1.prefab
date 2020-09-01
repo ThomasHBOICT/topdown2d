@@ -112,8 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 717017decd5bb1145ac36897b2c235c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 0
-  maxHealth: 0
+  maxHealth: 6
+  dropItem: {fileID: 2200392364038869877, guid: 8ef16b94ad4ec3849acbd5107f0d3eeb, type: 3}
   animator: {fileID: 6473854134604939382}
 --- !u!95 &6473854134604939382
 Animator:
