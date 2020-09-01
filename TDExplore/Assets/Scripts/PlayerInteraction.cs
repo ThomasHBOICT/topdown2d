@@ -8,11 +8,6 @@ public class PlayerInteraction : MonoBehaviour
     public TreeScript tree;
 
     private bool treeInRange = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -42,6 +37,11 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (collision.tag == "tree")
         {
+            if (tree != null)
+            {
+                tree.StopHitting();
+
+            }
             tree = null;
             treeInRange = false;
         }
