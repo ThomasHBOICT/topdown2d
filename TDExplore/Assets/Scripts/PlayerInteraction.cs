@@ -7,12 +7,10 @@ public class PlayerInteraction : MonoBehaviour
 
     public TreeScript tree;
 
-    private bool treeInRange = false;
-
     // Update is called once per frame
     void Update()
     {
-        if (treeInRange)
+        if (tree != null)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -29,21 +27,20 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (collision.tag == "tree")
         {
+            Debug.Log("tree in range");
             tree = collision.GetComponent<TreeScript>();
-            treeInRange = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "tree")
         {
+            Debug.Log("tree no longer in range");
             if (tree != null)
             {
                 tree.StopHitting();
-
             }
             tree = null;
-            treeInRange = false;
         }
     }
 }
