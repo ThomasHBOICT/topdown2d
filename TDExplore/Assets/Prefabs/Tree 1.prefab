@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 6
-  dropItem: {fileID: 2200392364038869877, guid: 8ef16b94ad4ec3849acbd5107f0d3eeb, type: 3}
+  dropItem: {fileID: 2184184426097665340, guid: 1452e3d3947c6034d8986151a3e7142d, type: 3}
   animator: {fileID: 6473854134604939382}
 --- !u!95 &6473854134604939382
 Animator:
