@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: PlayerInventory
   m_EditorClassIdentifier: 
   Container:
-  - item: {fileID: 11400000, guid: cbccfecb474b2d047afa4957c87e67ff, type: 2}
-    amount: 8
-  - item: {fileID: 11400000, guid: b37252f067643d34d9655e294334c628, type: 2}
-    amount: 10
   - item: {fileID: 11400000, guid: 5a4ed59a234098c4b89cc451925471d2, type: 2}
-    amount: 7
+    amount: 4
+  - item: {fileID: 11400000, guid: b37252f067643d34d9655e294334c628, type: 2}
+    amount: 2
+  - item: {fileID: 11400000, guid: cbccfecb474b2d047afa4957c87e67ff, type: 2}
+    amount: 3
   - item: {fileID: 11400000, guid: e1a0ff1b33beccf4199ae3ce8d2f8cb2, type: 2}
-    amount: 6
+    amount: 3
