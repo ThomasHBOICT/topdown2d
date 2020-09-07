@@ -18,6 +18,7 @@ public class TreeScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponentInChildren<Animator>();
         currentHealth = maxHealth;
     }
 
