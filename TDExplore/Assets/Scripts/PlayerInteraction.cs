@@ -42,5 +42,5 @@ public class PlayerInteraction : MonoBehaviour
             }
             tree = null;
         }
-    }
+    }    
 }

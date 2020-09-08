@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -39,12 +38,12 @@ public class PlayerMovement : MonoBehaviour
         if (movement.x > 0)
         {
             //transform.localScale = new Vector3(-2.5f, 2.5f, 2.5f);
-            spriteRenderer.flipX = true;
+            transform.localRotation = Quaternion.Euler(0, -180, 0);
         }
         if (movement.x < 0)
         {
             //transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
-            spriteRenderer.flipX = false;
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
 
         animator.SetFloat("speed", System.Math.Abs(movement.x));
