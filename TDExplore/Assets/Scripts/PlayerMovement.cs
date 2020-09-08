@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator animator;
-    private SpriteRenderer renderer;
+    private SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
         
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
-        renderer = GetComponentInChildren<SpriteRenderer>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
     private void Update()
     {
@@ -39,12 +39,12 @@ public class PlayerMovement : MonoBehaviour
         if (movement.x > 0)
         {
             //transform.localScale = new Vector3(-2.5f, 2.5f, 2.5f);
-            renderer.flipX = true;
+            spriteRenderer.flipX = true;
         }
         if (movement.x < 0)
         {
             //transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
-            renderer.flipX = false;
+            spriteRenderer.flipX = false;
         }
 
         animator.SetFloat("speed", System.Math.Abs(movement.x));

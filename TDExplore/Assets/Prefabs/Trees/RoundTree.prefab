@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   dropItem: {fileID: 2184184426097665340, guid: 1452e3d3947c6034d8986151a3e7142d, type: 3}
+  dropAfterTime: 1.5
   animator: {fileID: 0}
 --- !u!61 &5898012463538627803
 BoxCollider2D:

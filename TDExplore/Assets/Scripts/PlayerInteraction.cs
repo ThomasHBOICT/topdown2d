@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerInteraction : MonoBehaviour
 {
 
-    public TreeScript tree;
+    public DestroyableObject tree;
 
     // Update is called once per frame
     void Update()
@@ -28,7 +28,7 @@ public class PlayerInteraction : MonoBehaviour
         if (collision.tag == "tree")
         {
             Debug.Log("tree in range");
-            tree = collision.GetComponent<TreeScript>();
+            tree = collision.GetComponent<DestroyableObject>();
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

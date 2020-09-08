@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 2044862112218051557}
   - component: {fileID: 8653058222042433549}
   m_Layer: 0
-  m_Name: RoundTree (5)
+  m_Name: LongTree
   m_TagString: tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,6 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 6
   dropItem: {fileID: 2184184426097665340, guid: 1452e3d3947c6034d8986151a3e7142d, type: 3}
+  dropAfterTime: 1.5
   animator: {fileID: 0}
 --- !u!61 &8653058222042433549
 BoxCollider2D:
