@@ -38,12 +38,14 @@ public class PlayerMovement : MonoBehaviour
         if (movement.x > 0)
         {
             //transform.localScale = new Vector3(-2.5f, 2.5f, 2.5f);
-            transform.localRotation = Quaternion.Euler(0, -180, 0);
+            //transform.localRotation = Quaternion.Euler(0, -180, 0);
+            spriteRenderer.flipX = true;
         }
         if (movement.x < 0)
         {
             //transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
+            //transform.localRotation = Quaternion.Euler(0, 0, 0);
+            spriteRenderer.flipX = false;
         }
 
         animator.SetFloat("speed", System.Math.Abs(movement.x));
